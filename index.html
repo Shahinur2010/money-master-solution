@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html data-theme="cupcake" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/32bf33d6c5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="mb-4 ">
+        <div class="navbar bg-base-100 flex-1">
+            <p class="btn btn-ghost text-center block mx-auto normal-case font-semibold text-4xl">Money Master <i
+                    class="fa-solid fa-sack-dollar"></i></p>
+        </div>
+    </header>
+    <main>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 items-center justify-center w-full h-96 px-2">
+            <div class=" h-[100%] w-full">
+                <img class=" h-[500px] w-[100%] " src="images/Master-Your-Money.jpg" alt="">
+            </div>
+            <div class="bg-cyan-200 text-center h-[100%] ">
+                <p class="font-semibold text-lg mb-2">Income</p>
+                <p class="mb-2">Income: <input id="income" class="px-4 py-1 bg-gray-200" type="text" placeholder="10000"
+                        required></p>
+                <p class="font-semibold mb-2 text-lg">Expenses</p>
+                <p class="mb-2">Food: <input id="food" class="px-4 py-1 bg-gray-200" type="text" placeholder="3000"
+                    required></p>
+                <p class="mb-2">Rent: <input id="rent" class="px-4 py-1 bg-gray-200" type="text" placeholder="2000"
+                        required></p>
+                <p class="mb-2">Clothes: <input id="clothes" class="px-4 py-1 bg-gray-200" type="text" placeholder="500"
+                        required></p>
+                <button id="calculate" class="bg-blue-600 px-8 py-2 text-white border rounded-lg">Calculate</button>
+                <p class="font-semibold mb-2 text-lg">Total Expenses: <span id="total-expenses">5500</span> </p>
+                <p class="font-semibold mb-2 text-lg">Balance: <span id="balance">4500</span></p>
+                <p class="mb-2">Save: <input id="save" class="py-1 px-4 bg-gray-200" type="text" placeholder="20" required> % <button
+                        id="save-btn" class="bg-blue-600 px-8 py-2 text-white border rounded-lg">Save</button></p>
+                <p class="font-semibold mb-2 text-lg">Saving Amount: <span id="saving-amount">2000</span> </p>
+                <p class="font-semibold mb-2 text-lg">Remaining Balance: <span id="remaining-balance">2500</span></p>
+            </div>
+        </div>
+    </main>
+    <script src="js/practice.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
